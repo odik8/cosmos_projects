@@ -1,0 +1,19 @@
+.contacts {
+    color: #87644C;
+    line-height: 29px;
+}
+
+.contacts__location {
+    background-image: url('../../img/contacts/location.svg');
+    background-repeat: no-repeat;
+    padding-left: 25px;
+    background-position: left 2px;
+}
+
+.contacts__phone {
+    background-image: url('../../img/contacts/phone.svg');
+    background-repeat: no-repeat;
+    padding-left: 25px;
+    background-position: left 4px;
+    font-weight: 700;
+}

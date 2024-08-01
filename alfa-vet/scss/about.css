@@ -1,0 +1,14 @@
+.about__description {
+  color: #313454;
+  text-align: justify;
+  font-family: Manrope;
+  font-size: 24px;
+  margin-top: 38px;
+}
+@media (max-width: 425.98px) {
+  .about__description {
+    font-size: 16px;
+    margin-top: 19px;
+    text-align: left;
+  }
+}/*# sourceMappingURL=about.css.map */

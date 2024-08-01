@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=PT+Sans+Narrow:wght@400;700&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+.contacts__location {
+    background-image: url('../assets/contacts/pin.svg');
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 21px;
+}
+
+.contacts__user {
+    background-image: url('../assets/contacts/user.svg');
+    background-repeat: no-repeat;
+    background-position: left;
+    width: 20px;
+    height: 20px;
+}
+
+.contacts__phone {
+    background-image: url('../assets/contacts/phone.svg');
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 26px;
+}
+
+.contacts__work-time {
+    background-image: url("../assets/contacts/clock.svg");
+    background-repeat: no-repeat;
+    background-position: top left;
+    padding-left: 26px;
+    line-height: 28px;
+    /* 155.556% */
+}
+
+.location {
+    color: #363434;
+    font-family: Roboto;
+
+    .contacts {
+        position: absolute;
+        margin-top: 60px;
+        left: 10%;
+        width: 25%;
+        display: grid;
+        gap: 25px;
+        padding: 50px 70px;
+        border-radius: 5px;
+        border: 1px solid #EAEAEA;
+        background: #FFF;
+        box-shadow: 0px 16px 51px 0px rgba(0, 0, 0, 0.11);
+
+        @media (max-width: 1024.98px) {
+            gap: 10px;
+        }
+
+        @media (max-width: 1300px) {
+            padding: 20px;
+        }
+
+        @media (max-width: 768.98px) {
+            position: static;
+            width: 100%;
+            margin: 0;
+            gap: 20px;
+        }
+
+    }
+
+    .title {
+        color: #313454;
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 36px;
+
+        @media (max-width: 425.98px) {
+            margin-bottom: 0;
+        }
+
+    }
+
+    .contacts__location {
+        background-image: url('../assets/contacts/pin_fill.svg');
+        line-height: 22px;
+    }
+
+    .contacts__phone {
+        background-image: url('../assets/contacts/phone_fill.svg');
+    }
+}

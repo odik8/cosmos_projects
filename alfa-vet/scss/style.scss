@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=PT+Sans+Narrow:wght@400;700&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 44px;
+
+    @media (max-width: 426px) {
+        row-gap: 22px;
+    }
+
+    @media (min-width: 310px) {
+        padding: 16px;
+    }
+
+    @media (min-width: 575.98px) {
+        padding: 20px calc(50% - 270px);
+    }
+
+    @media (min-width: 767.98px) {
+        padding: 20px calc(50% - 360px);
+    }
+
+    @media (min-width: 991.98px) {
+        padding: 20px calc(50% - 480px);
+    }
+
+    @media (min-width: 1299.98px) {
+        padding: 20px calc(50% - 640px);
+    }
+
+    @media (min-width: 2055.98px) {
+        padding: 20px calc(50% - 1000px);
+    }
+
+    @media (min-width: 4055.98px) {
+        padding: 20px calc(50% - 2000px);
+    }
+}
+
+.btn {
+    display: inline-block;
+    border: 0;
+    border-radius: 19px;
+    background: #678C41;
+    box-shadow: 5px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #EFE1D4;
+    text-align: center;
+    font-family: Philosopher;
+    font-size: 32px;
+    padding: 13px 35px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.title {
+    color: #323653;
+    font-family: Philosopher;
+    font-size: 64px;
+    font-weight: 400;
+
+    @media (max-width: 425.98px) {
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+
+    @media (max-width: 525.98px) {
+        font-size: 36px;
+        margin-bottom: 16px;
+    }
+}
+
+@media (max-width: 768.98px) {
+    iframe {
+        height: 400px;
+    }
+}

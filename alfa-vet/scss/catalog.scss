@@ -1,0 +1,108 @@
+.catalog__title {
+    margin-bottom: 44px;
+
+    @media (max-width: 425.98px) {
+        margin-bottom: 16px;
+    }
+}
+
+.catalog__list {
+    display: grid;
+    gap: 40px;
+    list-style-type: none;
+}
+
+.catalog__item {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 2px 2px 10px 0px #313454;
+    padding: 20px 35px;
+    font-size: 18px;
+
+
+    @media (max-width: 992px) {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 5px;
+    }
+
+    @media (max-width: 510px) {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
+
+.catalog__text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @media (max-width: 510px) {
+        gap: 10px;
+    }
+}
+
+.catalog__item-title {
+    color: #313454;
+    font-family: Philosopher;
+    font-size: 36px;
+    font-weight: 700;
+
+    @media (max-width: 510px) {
+        font-size: 26px;
+        margin: 0;
+    }
+}
+
+.catalog__item-description {
+    color: #313454;
+    font-family: Manrope;
+    // font-size: 18px;
+
+    
+}
+
+.catalog__item-subtitle {
+    color: #313454;
+    font-family: Manrope;
+    // font-size: 18px;
+    font-weight: 600;
+}
+
+.catalog__item-list {
+    list-style-position: inside;
+    list-style-type: disc;
+    color: #313454;
+    font-family: Manrope;
+    font-weight: 500;
+}
+
+.catalog__image {
+    max-width: 100%;
+    align-self: center;
+}
+
+.catalog__btn {
+    background: linear-gradient(180deg, #313454 0%, #494D79 50.52%, #313454 100%);
+    grid-column: 2;
+    justify-self: end;
+    border-radius: 30px;
+
+    @media (max-width: 992px) {
+        grid-column: auto;
+        font-size: 20px;
+        border-radius: 20px;
+    }
+
+    @media (max-width: 425.98px) {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
+
+.catalog__item-list-item {
+    word-break: break-word;
+    hyphens: auto;
+}

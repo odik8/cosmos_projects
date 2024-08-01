@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=PT+Sans+Narrow:wght@400;700&display=swap');
+
+.page-footer {
+    background: linear-gradient(92deg, #313454 0.39%, #313454 92.08%);
+
+    .container {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        color: #EFE1D4;
+
+        @media (max-width: 1000px) {
+            flex-direction: column;
+            align-items: start;
+        }
+    }
+
+    .navigation__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        // column-gap: 190px;
+        row-gap: 20px;
+        font-weight: 300;
+        font-family: Manrope;
+
+        @media (max-width: 425.98px) {
+            grid-template-columns: 1fr;
+            row-gap: 10px;
+        }
+    }
+
+    .contacts {
+        display: grid;
+        gap: 10px;
+        color: #EFE1D4;
+        font-family: "Manrope";
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    .contacts__location {
+        background-image: url("../assets/footer/pin-light.svg");
+        background-repeat: no-repeat;
+        background-position: left;
+    }
+
+    .contacts__phone {
+        background-image: url('../assets/footer/phone_light.svg');
+        background-repeat: no-repeat;
+        background-position: left;
+    }
+}
+
+.page-footer__logo {
+    height: 69px;
+
+    @media (max-width: 1440.98px) {
+        width: 200px;
+        height: auto;
+    }
+}
+
+.page-footer__copyright {
+    border-top: 1px solid #EFE1D4;
+
+    a {
+        color: #EFE1D4;
+        font-family: Manrope;
+        font-size: 20px;
+        font-weight: 300;
+        text-decoration: none;
+
+        @media (max-width: 768.98px) {
+            font-size: 16px;
+        }
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 50px;
+        row-gap: 0;
+
+        @media (max-width: 768.98px) {
+            flex-wrap: wrap;
+            row-gap: 10px;
+            justify-content: start;
+            font-size: 16px;
+        }
+
+    }
+}

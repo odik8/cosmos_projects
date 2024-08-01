@@ -1,0 +1,98 @@
+.banner {
+  background: #D5D5D5;
+}
+@media (max-width: 768px) {
+  .banner .btn {
+    font-size: 24px;
+  }
+}
+@media (max-width: 616px) {
+  .banner .btn {
+    font-size: 20px;
+    padding: 10px 20px;
+  }
+}
+
+.banner__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media (max-width: 510px) {
+  .banner__container {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+  }
+}
+
+.banner__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 35px;
+}
+@media (max-width: 768px) {
+  .banner__text {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner__title {
+    font-size: 54px;
+  }
+}
+@media (max-width: 616px) {
+  .banner__title {
+    font-size: 44px;
+  }
+}
+@media (max-width: 425px) {
+  .banner__title {
+    font-size: 40px;
+  }
+}
+
+.banner__subtitle {
+  color: #323653;
+  font-family: Philosopher;
+  font-size: 32px;
+}
+@media (max-width: 768px) {
+  .banner__subtitle {
+    font-size: 28px;
+  }
+}
+@media (max-width: 616px) {
+  .banner__subtitle {
+    font-size: 22px;
+  }
+}
+
+.banner__btn-container {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 15px;
+  -moz-column-gap: 35px;
+       column-gap: 35px;
+}
+@media (max-width: 768px) {
+  .banner__btn-container {
+    row-gap: 8px;
+  }
+}
+@media (max-width: 425px) {
+  .banner__btn-container {
+    -moz-column-gap: 0px;
+         column-gap: 0px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+  }
+}
+
+.banner__photo {
+  max-width: 50%;
+}/*# sourceMappingURL=banner.css.map */

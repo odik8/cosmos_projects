@@ -1,0 +1,86 @@
+.form {
+    background-image: url('../assets/form/form-bg.png');
+    background-color: #313454;
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    padding: 48px 0;
+
+    @media (max-width: 460.98px) {
+        .container {
+            row-gap: 12px;
+        }
+    }
+}
+
+.form__container {
+    margin: 0 auto;
+}
+
+.form form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+
+
+    @media (max-width: 460.98px) {
+        flex-direction: column;
+    }
+}
+
+.form__title {
+    color: #EFE1D4;
+    font-size: 36px;
+    font-weight: 700;
+
+    @media (max-width: 425.98px) {
+        font-size: 28px;
+    }
+}
+
+.form__text {
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 20px;
+    font-weight: 300;
+
+    @media (max-width: 425.98px) {
+        font-size: 16px;
+    }
+}
+
+.form__input {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 0;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.17);
+    font-family: Manrope;
+    font-size: 24px;
+
+    @media (max-width: 425.98px) {
+        font-size: 20px;
+    }
+
+}
+
+.form__input::placeholder {
+    color: #EFE1D4;
+}
+
+.form__btn {
+    border-radius: 10px;
+    background: #EFE1D4;
+    color: #313454;
+    font-size: 24px;
+}
+
+.form__personal-data {
+    color: #EFE1D4;
+    font-family: Philosopher;
+    font-size: 16px;
+
+    a {
+        color: #EFE1D4;
+    }
+}

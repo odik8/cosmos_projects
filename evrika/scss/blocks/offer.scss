@@ -1,0 +1,28 @@
+.offer {
+    background: #BDA392;
+    padding: 23px 0;
+
+    .container {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        align-items: end;
+        padding: 0 20px;
+
+        @media (max-width: 768.98px) {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+.offer__text {
+    color: #FFF;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 143%;
+}
+
+.offer__title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}

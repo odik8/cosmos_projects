@@ -3,6 +3,27 @@
 .bestsellers {
     background: #BEA292;
     padding: 20px;
+
+    .btn {
+        padding: 10px 20px;
+        font-family: Inter;
+        font-weight: 700;
+        letter-spacing: 0.32px;
+        text-transform: uppercase;
+    }
+
+    .title {
+        color: #FFF;
+        font-size: 24px;
+        font-weight: 700;
+        text-align: left;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        &::after {
+            display: none;
+        }
+    }
 }
 
 .bestsellers__list {
@@ -10,6 +31,16 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 25px;
+
+    @media (max-width: 1100px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @media (max-width: 826px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 560px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 .bestsellers__item {
@@ -27,11 +58,25 @@
 
 .bestsellers__item-title {
     color: #616161;
-    font-family: Acme;
+    font-family: "Acme", sans-serif;
     font-size: 18px;
     line-height: 120%;
 }
 
 .bestsellers__item-price {
+    color: #616161;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 700;
     margin-bottom: 10px;
+}
+
+.bestsellers__item-vendor-code {
+    color: #BDA392;
+    font-size: 14px;
+}
+
+.bestsellers__item-subtitle {
+    color: #616161;
+    font-size: 12px;
 }

@@ -18,6 +18,12 @@
   margin-top: 70px;
   margin-bottom: 70px;
 }
+@media (max-width: 425.98px) {
+  .about .title {
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+}
 .about.container {
   background: rgba(248, 248, 248, 0.58);
   padding: 20px;
@@ -39,6 +45,12 @@
   font-feature-settings: "liga" off, "clig" off;
   font-size: 20px;
   line-height: 143%;
+}
+@media (max-width: 425.98px) {
+  .about__text {
+    background: none;
+    padding: 0;
+  }
 }
 
 .about__wrapper {

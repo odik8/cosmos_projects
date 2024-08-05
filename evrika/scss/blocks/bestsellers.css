@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+.bestsellers {
+  background: #BEA292;
+  padding: 20px;
+}
+
+.bestsellers__list {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.bestsellers__item {
+  border-radius: 10px;
+  background: #fff;
+  padding: 20px;
+  display: grid;
+  justify-items: start;
+  gap: 10px;
+}
+
+.bestsellers__item-img {
+  justify-self: center;
+}
+
+.bestsellers__item-title {
+  color: #616161;
+  font-family: Acme;
+  font-size: 18px;
+  line-height: 120%;
+}
+
+.bestsellers__item-price {
+  margin-bottom: 10px;
+}/*# sourceMappingURL=bestsellers.css.map */

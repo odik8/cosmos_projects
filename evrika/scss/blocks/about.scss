@@ -18,6 +18,11 @@
     .title {
         margin-top: 70px;
         margin-bottom: 70px;
+
+        @media (max-width: 425.98px) {
+            margin-top: 30px;
+            margin-bottom: 50px;
+        }
     }
 
     &.container {
@@ -43,6 +48,11 @@
         font-feature-settings: 'liga' off, 'clig' off;
         font-size: 20px;
         line-height: 143%;
+    }
+
+    @media (max-width: 425.98px) {
+        background: none;
+        padding: 0;
     }
 }
 
